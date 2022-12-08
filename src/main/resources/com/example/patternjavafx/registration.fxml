@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="535.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="378.0" prefWidth="231.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="268.0" fitWidth="224.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/beauty.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="goBackButton" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="51.0" prefWidth="50.0" style="-fx-background-color: TRANSPARENT;" text="&lt;" textFill="BLUE" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane accessibleText="jnk" prefHeight="378.0" prefWidth="307.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="login" focusTraversable="false" layoutX="8.0" layoutY="159.0" onAction="#userRegister" onKeyTyped="#setVisibilityLogin" prefHeight="26.0" prefWidth="290.0" promptText="Логин">
+               <padding>
+                  <Insets left="7.0" right="20.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="FIO" focusTraversable="false" layoutX="8.0" layoutY="122.0" onAction="#userRegister" onKeyTyped="#setVisibilityFIO" prefHeight="26.0" prefWidth="290.0" promptText="ФИО">
+               <padding>
+                  <Insets left="7.0" right="20.0" />
+               </padding></TextField>
+            <PasswordField fx:id="password1" focusTraversable="false" layoutX="8.0" layoutY="195.0" onAction="#userRegister" onKeyTyped="#setVisibilityPassword1" prefHeight="26.0" prefWidth="290.0" promptText="Пароль">
+               <padding>
+                  <Insets left="7.0" right="20.0" />
+               </padding></PasswordField>
+            <PasswordField fx:id="password2" focusTraversable="false" layoutX="8.0" layoutY="230.0" onAction="#userRegister" onKeyTyped="#setVisibilityPassword2" prefHeight="26.0" prefWidth="290.0" promptText="Пароль">
+               <padding>
+                  <Insets left="7.0" right="20.0" />
+               </padding></PasswordField>
+            <Button fx:id="sendRequest" layoutX="70.0" layoutY="284.0" mnemonicParsing="false" onAction="#userRegister" prefHeight="34.0" prefWidth="166.0" style="-fx-background-color: BLUE;" text="Зарегистрироваться" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="8.0" prefHeight="75.0" prefWidth="290.0" style="-fx-background-color: WHITE;" text="Зарегистрироваться в системе" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorMessageRegister" layoutX="8.0" layoutY="93.0" prefHeight="18.0" prefWidth="290.0" textFill="RED" />
+            <Button fx:id="FIOButton" accessibleRole="PASSWORD_FIELD" focusTraversable="false" layoutX="277.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#clearFIO" prefHeight="5.0" prefWidth="5.0" style="-fx-background-radius: 50; -fx-background-color: #ececec;" text="X">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="passwordButton1" accessibleRole="PASSWORD_FIELD" focusTraversable="false" layoutX="277.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#clearPassword1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-radius: 50; -fx-background-color: #ececec;" text="X">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="passwordButton2" accessibleRole="PASSWORD_FIELD" focusTraversable="false" layoutX="277.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#clearPassword2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-radius: 50; -fx-background-color: #ececec;" text="X">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginButton" accessibleRole="PASSWORD_FIELD" focusTraversable="false" layoutX="277.0" layoutY="164.0" mnemonicParsing="false" onMouseClicked="#clearLogin" prefHeight="5.0" prefWidth="5.0" style="-fx-background-radius: 50; -fx-background-color: #ececec;" text="X">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
