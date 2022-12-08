@@ -47,7 +47,7 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Label>
-                <Label fx:id="registration" accessibleRole="BUTTON" layoutX="182.0" layoutY="235.0" onMouseClicked="#openRegistration" text="Зарегистрироваться" textFill="BLUE" />
+                <Label fx:id="registration" accessibleRole="BUTTON" layoutX="182.0" layoutY="235.0" onMouseClicked="#openRegistration" stylesheets="@Styles.css" text="Зарегистрироваться" textFill="BLUE" />
                 <Button fx:id="loginButton" accessibleRole="PASSWORD_FIELD" focusTraversable="false" layoutX="277.0" layoutY="167.0" mnemonicParsing="false" onMouseClicked="#clearLogin" prefHeight="5.0" prefWidth="5.0" style="-fx-background-radius: 50; -fx-background-color: #ececec;" text="X">
                     <opaqueInsets>
                         <Insets />

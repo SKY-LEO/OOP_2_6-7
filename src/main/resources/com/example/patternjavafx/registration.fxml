@@ -58,7 +58,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label fx:id="errorMessageRegister" layoutX="8.0" layoutY="93.0" prefHeight="18.0" prefWidth="290.0" textFill="RED" />
+            <Label fx:id="errorMessageRegister" layoutX="8.0" layoutY="93.0" prefHeight="18.0" prefWidth="290.0" stylesheets="@Styles.css" textFill="RED" />
             <Button fx:id="FIOButton" accessibleRole="PASSWORD_FIELD" focusTraversable="false" layoutX="277.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#clearFIO" prefHeight="5.0" prefWidth="5.0" style="-fx-background-radius: 50; -fx-background-color: #ececec;" text="X">
                <opaqueInsets>
                   <Insets />
